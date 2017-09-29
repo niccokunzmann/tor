@@ -19,5 +19,27 @@ To run the docker container, execute this
 
     docker run --rm -it niccokunzmann/tor
 
+## relay
+
+If you want to run a relay, a `docker-compose.yml` can be generated as described
+in [this post][relay]:
+
+```yaml
+
+version: "2"
+
+services:
+  tor:
+    image: niccokunzmann/tor
+    environment:
+      ORPort: 443
+      Exitpolicy: "reject *:*"
+      Nickname: ididntedittheconfig
+      ContactInfo: "human@..."
+
+```
+
+
 [tutorial]: https://www.torproject.org/docs/debian.html.en#ubuntu
 [builds]: https://hub.docker.com/r/niccokunzmann/tor/builds/
+[relay]: https://www.torproject.org/docs/tor-doc-relay.html.en

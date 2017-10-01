@@ -37,6 +37,8 @@ version: "2"
 services:
   tor:
     image: niccokunzmann/tor
+    ports:
+    - "443:443"
     environment:
       ORPort: 443
       Exitpolicy: "reject *:*"

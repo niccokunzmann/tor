@@ -19,7 +19,13 @@ To run the docker container, execute this
 
     docker run --rm -it niccokunzmann/tor
 
-## relay
+## configuration
+
+If you like to configure the service, you can do so by setting environment varaibles.
+See the [docker-compose.yml][compose] file for the full configuration options.
+Below, you can find an example for a tor relay.
+
+### relay
 
 If you want to run a relay, a `docker-compose.yml` can be generated as described
 in [this post][relay]:
@@ -39,7 +45,9 @@ services:
 
 ```
 
+<!-- Use absolute links even for project files so that dockerhub can use them. -->
 
 [tutorial]: https://www.torproject.org/docs/debian.html.en#ubuntu
 [builds]: https://hub.docker.com/r/niccokunzmann/tor/builds/
 [relay]: https://www.torproject.org/docs/tor-doc-relay.html.en
+[compose]: https://github.com/niccokunzmann/tor/blob/master/docker-compose.yml

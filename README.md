@@ -47,9 +47,13 @@ services:
 
 ```
 
+If you want to change the `Exitpolicy`, you should read [about what to let through to reduce legal implications][reduced-exit-policy].
+
 <!-- Use absolute links even for project files so that dockerhub can use them. -->
 
 [tutorial]: https://www.torproject.org/docs/debian.html.en#ubuntu
 [builds]: https://hub.docker.com/r/niccokunzmann/tor/builds/
 [relay]: https://www.torproject.org/docs/tor-doc-relay.html.en
 [compose]: https://github.com/niccokunzmann/tor/blob/master/docker-compose.yml
+[reduced-exit-policy]: https://trac.torproject.org/projects/tor/wiki/doc/ReducedExitPolicy
+

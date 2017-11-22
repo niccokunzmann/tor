@@ -41,7 +41,7 @@ services:
     - "443:443"
     environment:
       ORPort: 443
-      Exitpolicy: "reject *:*"
+      ExitPolicy: "reject *:*"
       Nickname: ididntedittheconfig
       ContactInfo: "human@..."
 

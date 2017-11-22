@@ -9,7 +9,10 @@ function option() {
   if [ -n "$value" ]; then
     echo "$name $value"
   else
-    echo "# Option $name not in use."
+    echo "# Option $name not in use. Using default value."
+    if [ "$name" == "ExitPolicy" ]; then
+      echo "ExitPolicy reject *:*"
+    fi
   fi
 }
 

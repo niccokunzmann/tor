@@ -1,5 +1,7 @@
 # tor
 
+**Obsoleted in favor of https://community.torproject.org/relay/setup/bridge/docker/ **
+
 [![Docker Build Status](https://img.shields.io/docker/build/niccokunzmann/tor.svg)][builds]
 
 This is a tor docker container which follows [this tutorial][tutorial]

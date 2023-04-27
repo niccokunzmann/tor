@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu
 # following this tutorial: https://www.torproject.org/docs/debian.html.en#ubuntu
 
 RUN echo 'deb http://deb.torproject.org/torproject.org xenial main' > /etc/apt/sources.list.d/tor.list
